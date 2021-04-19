@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+body{
+    background: linear-gradient(to right,#252525, #cbcccb,#7b7c7c,#252525);
+}
+.parent-div{
+    /* position: relative; */
+    display: flex;
+    height: 40%;
+    margin-left: 20%;
+    margin-top: 20px;
+    /* background: linear-gradient(to right,#30F3FF, #214C8A); */
+}
+
+.card{
+    margin: 10px;
+    justify-content: space-around;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    color: #690000fa;
+    margin: 10px;
+}
+label{
+    margin: 15px;
+    font-size: 40px;
+}
+
+input{
+    margin: 10px;
+    font-size: 30px;
+    width: 250px;
+}
+
+button{
+    padding: 10px;
+    font-size: 30px;
+    background-color: darkgoldenrod;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(223, 188, 100);
+}
+
+.score{
+    /* margin: 10px; */
+    margin-left: 11%;
+    display: flex;
+    width: 60%;
+    /* background-color: darkkhaki; */
+}
+
+.score .score1{
+    margin-left: 10%;
+}
+
+.score .score2{
+    margin-left: 40%;
+}
+
+.winner-div{
+    text-align: center;
+    display: none;
+}
+
+.win button{
+    padding: 15px 25px;
+    font-size: 30px;
+    background-color: rgb(11, 184, 98);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+}
+
+.win button:hover{
+    background-color: rgb(70, 230, 131);
+}
+
+#err1{
+    font-size: 15px;
+    color: rgb(219, 7, 7);
+    display: none;
+}
+
+#err2{
+    font-size: 15px;
+    color: rgb(219, 7, 7);
+    display: none;
+}

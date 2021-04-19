@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>NumPuzzle</title>
+</head>
+<body>
+    <div class="header">
+        <h1><i>NumPuzzle</i></h1>
+    </div>
+
+    <div id="parent-div" class="parent-div">
+        <div class="card" style="background: linear-gradient(to right,#55a8d8, #353eb4); padding: 30px;">
+            <div class="card-body">
+              <div class="card-title" style="padding: 10px;">
+                    <label for="">Player 1</label>
+                </div>
+                <div class="card-text">
+                    <input id="player1" type="text" placeholder="Enter Number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+                    <button onclick="calculate1()">Go</button>
+                </div>
+
+                <div id="err1" class="card-text">
+                    <i class="fa fa-exclamation-triangle"></i> Use numbers between 1 to 10
+                </div>
+
+                <div class="card-text" style="padding: 10px;">
+                    <label class="score1">Score: <span id="score1">0</span></label>
+                </div>
+            </div>
+          </div>
+    
+          <div class="card" style="background: linear-gradient(to right,#9e5094, #e94173); padding: 30px;">
+            <div class="card-body">
+                <div class="card-title" style="padding: 10px;">
+                    <label for="">Player 2</label>
+                </div>
+                <div class="card-text">
+                    <input id="player2" type="text" placeholder="Enter Number" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+                    <button onclick="calculate2()">Go</button>
+                </div>
+
+                <div id="err2" class="card-text">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Use numbers between 1 to 10
+                </div>
+
+                <div class="card-text" style="padding: 10px;">
+                    <label class="score2">Score: <span id="score2">0</span></label>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div id="winner-div" class="winner-div">
+        <div class="win">
+            <img src="Congrats.gif" alt="" height="200px" width="300px">
+            <h2 id="h2"></h2>
+            <button onclick="restart()">Restart</button>
+        </div>
+    </div>
+    
+</body>
+</html>
